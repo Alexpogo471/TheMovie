@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 interface MoviesApiService {
     @GET("/3/movie/popular")
-    fun movies(@Query("api_key") key:String, @Query("language") lang:String, @Query("page") page: String ) : Call<Root>
+    fun movies(@Query("api_key") key:String, @Query("language") lang:String, @Query("page") page: Int ) : Call<Root>
 
     companion object Factory {
 
